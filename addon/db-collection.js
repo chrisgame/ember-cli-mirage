@@ -26,9 +26,9 @@ class DbCollection {
 
     if (!_.isArray(copy)) {
       let attrs = copy;
-      if (attrs.id === undefined || attrs.id === null) {
-        attrs.id = records.length + 1;
-      }
+      //if (attrs.id === undefined || attrs.id === null) {
+        //attrs.id = records.length + 1;
+      //}
 
       records.push(attrs);
       returnData = JSON.parse(JSON.stringify(attrs));
